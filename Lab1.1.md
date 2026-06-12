@@ -74,4 +74,40 @@ df -h
 5. Check Current User
 whoami
 ```
+
+## Virtualization enable setting
+```python
+# Enable Virtualization in Laptop
+
+## BIOS Keys by Laptop Brand
+
+| Laptop Brand | BIOS Key |
+|---------------|----------|
+| Lenovo ThinkPad | F1 |
+| Lenovo IdeaPad | F2 |
+| Dell | F2 |
+| HP | Esc → F10 |
+| ASUS | F2 |
+| Acer | F2 |
+| MSI | Del |
+| Samsung | F2 |
+| Toshiba | F2 |
+
+## Steps
+
+1. Shut down the laptop.
+2. Turn it on and press the BIOS key repeatedly.
+3. Go to **Advanced** or **CPU Configuration**.
+4. Find **Virtualization Technology (VT-x)** or **AMD SVM Mode**.
+5. Change it to **Enabled**.
+6. Press **F10** to save and restart.
+
+## Verify in Windows
+
+**Task Manager → Performance → CPU → Virtualization**
+
+- Enabled ✅
+- Disabled ❌
+
+```
 https://login.us-east-1.auth.skillbuilder.aws/otp/input/response?redirect_uri=https%3A%2F%2Fus-east-1.auth.skillbuilder.aws%2Foauth2%2Fidpresponse&state=H4sIAAAAAAAAAG2R2W6jMBSG38XXIcUY2zh3WQkkaRJKWphRFQFmjQOEJTSt5t3H1UijuZi7T_qXc6T_CwRgAvpWiYO2U-B5E3nmcyccH4xAKJW9e5AUSdJpnGch4fe4TMIEVzm7N0RnuIykgUtD1nV1O3l6ElWal-O_leOg77Jxe8mFCPtc8LgZB0P7x_XUxG1dlW0sK2JZEVX8G5Pvw9ZiLjEFk5-gquMy5-B9BDKptJ3nJlEu-tVgW8GV7XKoPiBba_vt6eL6qUIwojrGEFMCKaUBMRDFmMQUE6RrWNWpziklTDd0iDji8kwue9NTYSUlCTp_0ylqZKLso0LHqoirJSnwbcXtdhCfmPVWJROFTLxomEi8SFx8nG_Tzau1Gxb8gAbvskHQRSmB7koo68Tn-0LxHozXx-O5bOxpuaXNm_95nTv528xcm9lq8bzfmtsbnV12QtxsX7xEe0uN4a4f-tnqbthNOS3npJpii85TcnXWJnrl7sHG9Lz7UT78fH931eI6O88Ip7UDuWcsS7Jgm2Wbn6Zu4feOcFpPlR-Lfzf__0DSdQUTSA0VM6IyPAI1mCSBaOMRaGScBVw3WJAoJFRVRYchVIxIw0pIUKhRxDSGNdlxl_u9__oNw3nhJmYCAAA.H4sIAAAAAAAAANvdOdWpNK9mtlHv3L_yLissFRwnvZ1ok_T2m_dqa-PAM28B0JkktCAAAAA.4
