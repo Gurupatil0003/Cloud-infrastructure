@@ -522,3 +522,39 @@ Yes, multiple operating systems can run simultaneously using virtual machines.
 # Conclusion
 
 This experiment introduced virtualization technology and demonstrated how to create, configure, and manage virtual machines using VirtualBox or VMware. The knowledge gained in this experiment serves as the foundation for cloud computing, DevOps, containerization, and server management concepts explored in subsequent experiments.
+
+
+```python
+# Update system
+sudo apt update -y
+
+# Install Nginx
+sudo apt install nginx -y
+
+# Start and enable Nginx
+sudo systemctl start nginx
+sudo systemctl enable nginx
+
+# Go to web root
+cd /var/www/html
+
+# Fix permission
+sudo chown -R ubuntu:ubuntu /var/www/html
+
+# Remove default files
+sudo rm -rf *
+
+# Go to home directory (safe place to clone)
+cd ~
+
+# Clone your GitHub repo
+git clone https://github.com/hamza-shabbir-ansari/Restaurant-website.git
+
+# Move files to nginx folder
+sudo cp -r Restaurant-website/* /var/www/html/
+
+# Restart nginx
+sudo systemctl restart nginx
+
+
+```
