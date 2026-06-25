@@ -558,3 +558,30 @@ sudo systemctl restart nginx
 
 
 ```
+
+```python
+sudo apt update -y
+
+sudo apt install nginx -y
+
+sudo systemctl start nginx
+sudo systemctl enable nginx
+
+cd /var/www/html
+
+sudo chown -R ubuntu:ubuntu /var/www/html
+
+sudo rm -rf *
+
+cd ~
+
+git clone https://github.com/hamza-shabbir-ansari/Restaurant-website.git
+
+sudo cp -r Restaurant-website/* /var/www/html/
+
+sudo systemctl restart nginx
+
+
+
+
+```
